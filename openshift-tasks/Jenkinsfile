@@ -19,8 +19,8 @@ podTemplate(
     // Define Maven Command to point to the correct
     // settings for our Nexus installation
     def mvnCmd = "mvn -s ../nexus_settings.xml"
-    def devProject  = "784c-tasks-dev"
-    def prodProject = "784c-tasks-prod"
+    def devProject  = "c432-tasks-dev"
+    def prodProject = "c432-tasks-prod"
 
     // Checkout Source Code.
     stage('Checkout Source') {
