@@ -38,7 +38,7 @@ podTemplate(
       // TBD Set the tag for the development image: version + build number
       def devTag  = "${version}-" + currentBuild.number
       // Set the tag for the production image: version
-      def prodTag = "${version}"
+      def prodTag = "${version}-" + currentBuild.number
 
       // Using Maven build the war file
       // Do not run tests in this step
